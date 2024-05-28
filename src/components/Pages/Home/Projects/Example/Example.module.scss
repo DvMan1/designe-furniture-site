@@ -1,0 +1,21 @@
+.example_box{
+    flex-basis: calc((100% - 20px) / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease-in-out;
+}
+.example_box:hover {
+    transform: scale(1.1);
+    
+  }
+.example_img{
+    border-radius:15%;
+    width: 75%;
+    align-items: center;
+}
+.example_title{
+    flex-basis: 100%;
+    text-align: center;
+}
