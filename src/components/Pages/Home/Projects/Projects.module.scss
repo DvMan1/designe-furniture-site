@@ -1,6 +1,6 @@
 .projects_box{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: table;
+    width: 100%;
     justify-content: center;
+    align-items: center;
 }
