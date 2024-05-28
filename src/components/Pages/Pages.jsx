@@ -13,7 +13,7 @@ const Pages = () => {
     <>
       <NavigationBar />
       <div className={styles.page_box}>
-        КАРОЛИНА ГЛАВНАЯ
+        !КАРОЛИНА ГЛАВНАЯ!
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio"element={<Portfolio/>}/>
