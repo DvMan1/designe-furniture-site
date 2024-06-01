@@ -1,0 +1,10 @@
+.fact_box{
+    width: calc(50% - 10px); /* 50% ширины минус отступ */
+    margin-bottom: 10px; 
+}
+.fact_box:hover .fact_title{
+    color: orange;
+}
+.fact_box:hover .fact_article{
+    color: orange;
+}

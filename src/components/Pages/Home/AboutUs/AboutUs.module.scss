@@ -1,14 +1,33 @@
 .advantages_box {
-    width: 50%;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
+  gap: 10px;
+
+  background-color: aliceblue;
+}
+.about_box{
+  display: table;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .advantages_title {
-  width: 100%;
+  width: 50%;
   text-align: center;
 }
-.advantages_article {
-  width: 100%;
+.facts_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 15%;
+}
+.more_box{
+  display: table-cell;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  position: relative;
+
 }

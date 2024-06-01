@@ -8,7 +8,7 @@ const More = ({ index }) => {
     <div className={styles.more_box}>
       {content ? (
         <>
-          <p>{content.description}</p>
+          <p className={styles.more_article}>{content.description}</p>
         </>
       ) : (
         <p>Контент не найден</p>
