@@ -1,61 +1,14 @@
 import styles from "./FormCallback.module.scss";
-import { useForm } from "react-hook-form";
+import Form from "./Form/Form";
 
 const FormCallback = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
-  };
   return (
-    <form className={styles.callback_box} onSubmit={handleSubmit(onSubmit)}>
-      <div className={styles.input_box}>
-        <input
-          className={styles.callback_input}
-          type="name"
-          {...register("name", { required: true })}
-          id="name"
-        />
-        <label className={styles.callback_label} htmlFor="name">
-          Ім'я
-        </label>
-        {errors.login && <span>This field is required</span>}
-      </div>
-
-      <div className={styles.input_box}>
-        <input
-          className={styles.callback_input}
-          type="tel"
-          {...register("tel", { required: true })}
-          id="phone"
-        />
-        <label className={styles.callback_label} htmlFor="phone">
-          Телефон
-        </label>
-        {errors.login && <span>This field is required</span>}
-      </div>
-
-      <div className={styles.textarea_box}>
-        <textarea
-          className={styles.callback_message_input}
-          name="feedback"
-          rows="5"
-          placeholder="Enter your message here..."
-          {...register("message")}
-          id="message"
-        />
-        {errors.password && <span>This field is required</span>}
-      </div>
-
-      <button className={styles.callback_submit_button} type="submit">
-        Надіслати
-      </button>
-    </form>
+    <div className={styles.form_container}>
+      <h2 className={styles.form_title}>
+        ПРЕКРАСНАЯ КОНСУЛЬТАЦИЯ ДЛЯ БАГАТЫХ ЛЮДЕЙ С МАССАЖЕМ СТУПНЕЙ ГЕМОРРОЕМ{" "}
+      </h2>
+      <Form />
+    </div>
   );
 };
 export default FormCallback;
