@@ -2,6 +2,7 @@ import styles from "./NavigationBar.module.scss";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MainLogo from "./MainLogo/MainLogo";
+
 const StyledLink = styled(NavLink)`
   color: black;
 

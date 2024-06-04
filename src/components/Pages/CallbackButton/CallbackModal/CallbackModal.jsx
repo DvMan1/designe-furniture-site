@@ -25,9 +25,9 @@ const CallbackModal = ({ onClose }) => {
   }, []);
 
   return createPortal(
-    <div onClick={handleBackDropClick} className={styles.modalBackdrop}>
-      <div className={styles.modalContent}>
-        <button onClick={onClose}>Close Modal</button>
+    <div onClick={handleBackDropClick} className={styles.ModalOverlay}>
+      <div className={styles.ModalContent}>
+        <button onClick={onClose} className={styles.ModalCloseButton}>Close Modal</button>
         Позвони
       </div>
     </div>,

@@ -12,7 +12,7 @@ import CallbackButton from "./CallbackButton/CallbackButton"
 const Pages = () => {
   return (
     <>
-      <NavigationBar />
+      <NavigationBar/>
       <CallbackButton/>
       <div className={styles.page_box}>
         !КАРОЛИНА ГЛАВНАЯ!
