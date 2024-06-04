@@ -1,6 +1,6 @@
 import { useState } from "react";
 import icon from "../../../assets/symbol-defs.svg";
-import styles from "./CallbackButton.module.scss"
+import styles from "./CallbackButton.module.scss";
 import CallbackModal from "./CallbackModal/CallbackModal";
 
 const CallbackButton = () => {
@@ -12,13 +12,15 @@ const CallbackButton = () => {
 
   return (
     <>
-      <div className={styles.icon_box}>
-        <svg className={styles.icon} onClick={handleToggleModal}>
-          <use href={`${icon}#icon-phone`}></use>
-        </svg>
-      </div>
+      {!visibleModal && (
+        <div className={styles.icon_box}>
+          <svg className={styles.icon} onClick={handleToggleModal}>
+            <use href={`${icon}#icon-phone`}></use>
+          </svg>
+        </div>
+      )}
 
-      {visibleModal && <CallbackModal onClose={handleToggleModal}/>}
+      {visibleModal && <CallbackModal onClose={handleToggleModal} />}
     </>
   );
 };
