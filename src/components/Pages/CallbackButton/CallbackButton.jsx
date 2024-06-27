@@ -1,5 +1,5 @@
 import { useState } from "react";
-import icon from "../../../assets/symbol-defs.svg";
+import icon from "../../../../public/symbol-defs.svg";
 import styles from "./CallbackButton.module.scss";
 import CallbackModal from "./CallbackModal/CallbackModal";
 

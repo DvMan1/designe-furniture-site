@@ -15,7 +15,6 @@ const Pages = () => {
       <NavigationBar/>
       <CallbackButton/>
       <div className={styles.page_box}>
-        !КАРОЛИНА ГЛАВНАЯ!
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/portfolio"element={<Portfolio/>}/>
