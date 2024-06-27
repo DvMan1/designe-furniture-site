@@ -1,0 +1,29 @@
+.loading_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #072047;
+    z-index: 9999;
+  }
+
+  .text_loading {
+    font-family: "STIX Two Text", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 102px;
+    display: inline-block;
+    color: #c2c2c2; 
+    opacity: 0;
+    transform: rotateY(90deg);
+    animation: appear 0.5s forwards;
+  }
+  
+  @keyframes appear {
+    to {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
