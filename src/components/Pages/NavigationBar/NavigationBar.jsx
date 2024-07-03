@@ -1,7 +1,10 @@
 import styles from "./NavigationBar.module.scss";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MainLogo from "./MainLogo/MainLogo";
+import icon from "../../../../public/symbol-defs.svg"
+import classNames from 'classnames';
 
 const StyledLink = styled(NavLink)`
   color: black;
@@ -15,11 +18,23 @@ const StyledLink = styled(NavLink)`
 `;
 
 const NavigationBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className={styles.menu_box}>
       <MainLogo></MainLogo>
+      
       <nav className={styles.nav_box}>
-        <StyledLink to="/" className={styles.nav_link}>
+        
+        <button type="button" className={classNames(styles.menu_button, { [styles.is_open]: isOpen })} onClick={toggleMenu}>
+          <svg width="40px"height="40px">
+            <use className={styles.icon_menu} href={`${icon}#icon-burger`}></use>
+            <use className={styles.icon_cross} href={`${icon}#icon-cross`}></use>
+          </svg>
+        </button>
+        <div className={ classNames(styles.menu_conteiner,{ [styles.is_open]: isOpen })}><StyledLink to="/" className={styles.nav_link}>
           Home
         </StyledLink>
         <StyledLink to="/portfolio" className={styles.nav_link}>
@@ -33,8 +48,9 @@ const NavigationBar = () => {
         </StyledLink>
         <StyledLink to="/contact" className={styles.nav_link}>
           Contact
-        </StyledLink>
+        </StyledLink> </div>
       </nav>
+      
     </div>
   );
 };
