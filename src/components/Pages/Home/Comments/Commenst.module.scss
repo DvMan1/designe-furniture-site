@@ -8,6 +8,12 @@
 .comments_contener{
     background-color: white;
     position: relative;
+    height: 400px;
+    width: 600px;
+    border-radius:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .Prev_button_contener{
     position: absolute;
