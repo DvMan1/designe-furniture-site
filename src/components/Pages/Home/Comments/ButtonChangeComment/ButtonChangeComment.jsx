@@ -4,13 +4,22 @@ import styles from "./ButtonChangeComment.module.scss"
 const ButtonChangeComment = ({ index, curentIndex, setIndex, commentsLength }) => {
 
   const changeIndex = () => {
-    const newIndex = (curentIndex - 1 + index + commentsLength) % commentsLength + 1;
+    let newIndex = curentIndex + index;
+  
+
+    if (newIndex < 1) {
+      newIndex = commentsLength; 
+    } else if (newIndex > commentsLength) {
+      newIndex = 1; 
+    }
+  
     setIndex(newIndex);
   };
+  
 
   return (
     <button  className= {styles.button_comment}type="button" onClick={changeIndex}>
-      {index > 0 ? "Next" : "Prev"}
+      {index > 0 ? ">" : "<"}
     </button>
   );
 };
