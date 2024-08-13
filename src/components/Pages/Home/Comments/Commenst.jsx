@@ -3,6 +3,7 @@ import styles from "./Commenst.module.scss";
 import Comment from "./Comment/Comment";
 import commentsData from "../../../../data/comments.json";
 import ButtonChangeComment from "./ButtonChangeComment/ButtonChangeComment";
+import PaginationDots from "./PaginationDots/PaginationDots";
 const Comments = () => {
   const [curentComment, setComment] = useState(1);
   const commentsLength = commentsData.comments.length;
@@ -10,9 +11,13 @@ const Comments = () => {
     (c) => c.id === curentComment
   );
   const commentSecond = commentsData.comments.find(
-    (c) =>
-      c.id === ((curentComment - 1 + 1 + commentsLength) % commentsLength) + 1
+    (c) => c.id === curentComment + 1
   );
+  const commentsPerPage = 2;
+  const totalComments = commentsData.comments.length;
+  const totalPages = Math.ceil(totalComments / commentsPerPage);
+
+  const currentPage = Math.ceil(curentComment / commentsPerPage);
 
   return (
     <div className={styles.comments_box}>
@@ -25,9 +30,9 @@ const Comments = () => {
             commentsLength={commentsLength}
           />
         </div>
-        <Comment name={commentFirst.name} text={commentFirst.comment} />
-        {commentSecond.id !== 1 && (
-          <Comment name={commentSecond.name} text={commentSecond.comment} />
+        <Comment name={commentFirst.username} text={commentFirst.comment} />
+        {commentSecond && commentSecond.id !== 1 && (
+          <Comment name={commentSecond.username} text={commentSecond.comment} />
         )}
         <div className={styles.Next_button_contener}>
           <ButtonChangeComment
@@ -37,6 +42,7 @@ const Comments = () => {
             commentsLength={commentsLength}
           />
         </div>
+        <PaginationDots currentPage={currentPage} totalPages={totalPages} />
       </div>
     </div>
   );
