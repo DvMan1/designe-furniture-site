@@ -30,9 +30,9 @@ const Comments = () => {
             commentsLength={commentsLength}
           />
         </div>
-        <Comment name={commentFirst.username} text={commentFirst.comment} />
+        <Comment name={commentFirst.username} text={commentFirst.comment} role={commentFirst.role} avatar={commentFirst.avatar} />
         {commentSecond && commentSecond.id !== 1 && (
-          <Comment name={commentSecond.username} text={commentSecond.comment} />
+          <Comment name={commentSecond.username} text={commentSecond.comment} role={commentSecond.role} avatar={commentSecond.avatar}/>
         )}
         <div className={styles.Next_button_contener}>
           <ButtonChangeComment
