@@ -1,20 +1,9 @@
 import React from "react";
 import styles from "./ButtonChangeComment.module.scss"
 
-const ButtonChangeComment = ({ index, curentIndex, setIndex, commentsLength }) => {
+const ButtonChangeComment = ({ index,  changeIndex }) => {
 
-  const changeIndex = () => {
-    let newIndex = curentIndex + index;
-  
 
-    if (newIndex < 1) {
-      newIndex = commentsLength; 
-    } else if (newIndex > commentsLength) {
-      newIndex = 1; 
-    }
-  
-    setIndex(newIndex);
-  };
   
 
   return (
