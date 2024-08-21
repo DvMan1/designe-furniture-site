@@ -13,6 +13,10 @@
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    @media screen and (max-width: 767px) {
+      width: 25px;
+    height: 5px;
+  }
   }
   
   .dot.active {

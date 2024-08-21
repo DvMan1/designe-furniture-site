@@ -1,10 +1,21 @@
 .fact_box{
-    width: calc(50% - 10px); /* 50% ширины минус отступ */
-    margin-bottom: 10px; 
+    
+    padding-bottom: 150px;
 }
 .fact_box:hover .fact_title{
     color: orange;
 }
 .fact_box:hover .fact_article{
     color: orange;
+}
+
+.fact_title{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+.fact_article{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: left;
 }

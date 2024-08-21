@@ -33,7 +33,7 @@
 .callback_input:focus + .callback_label,
 .callback_input:not(:placeholder-shown) + .callback_label {
   transform: translateY(-40px);
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .textarea_box {
   display: flex;

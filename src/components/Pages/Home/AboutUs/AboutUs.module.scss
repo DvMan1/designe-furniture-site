@@ -1,33 +1,33 @@
 .advantages_box {
+  height: 1440px;
+  padding-top: 350px;
+  padding-bottom: 150px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-
-  background-color: aliceblue;
 }
-.about_box{
-  display: table;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+.about_us_box{
+}
+.title_box {
+  height: 320px;
+;
 }
 .advantages_title {
-  width: 50%;
-  text-align: center;
+  font-size: 120px;
+  text-align:left;
+ 
 }
-.facts_box {
+.more_countiner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 15%;
-}
-.more_box{
-  display: table-cell;
-  overflow: hidden;
-  width: 50%;
-  height: 100%;
-  background-color: black;
-  position: relative;
 
 }
+.facts_box {
+  display: inline;
+  margin-top: 100px;
+  margin-right: 80px;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+

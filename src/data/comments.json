@@ -1,35 +1,44 @@
 {
-    "comments": [
-      {
-        "id": 1,
-        "username": "user1",
-        "comment": "This is the first comment.",
-        "timestamp": "2024-06-01T12:34:56Z"
-      },
-      {
-        "id": 2,
-        "username": "user2",
-        "comment": "This is the second comment.",
-        "timestamp": "2024-06-01T13:00:00Z"
-      },
-      {
-        "id": 3,
-        "username": "user3",
-        "comment": "This is another comment with some detailed feedback.",
-        "timestamp": "2024-06-01T14:15:30Z"
-      },
-      {
-        "id": 4,
-        "username": "user4",
-        "comment": "This is another comment .",
-        "timestamp": "2024-06-01T14:15:30Z"
-      },
-      {
-        "id": 5,
-        "username": "user5",
-        "comment": "This is 323232323 comment .",
-        "timestamp": "2024-06-01T14:15:30Z"
-      }
-    ]
-  }
-  
+  "comments": [
+    {
+      "id": 1,
+      "username": "user1",
+      "comment": "This is the first comment.",
+      "timestamp": "2024-06-01T12:34:56Z",
+      "role": "Admin",
+      "avatar":"/src/assets/user1.webp"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "comment": "This is the second comment.",
+      "timestamp": "2024-06-01T13:00:00Z",
+      "role": "Moderator",
+      "avatar":"/src/assets/user2.webp"
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "comment": "This is another comment with some detailed feedback.",
+      "timestamp": "2024-06-01T14:15:30Z",
+      "role": "User"   ,
+      "avatar":"/src/assets/user3.webp"
+    },
+    {
+      "id": 4,
+      "username": "user4",
+      "comment": "This is another comment.",
+      "timestamp": "2024-06-01T14:15:30Z",
+      "role": "Guest" ,
+      "avatar":"/src/assets/user4.webp"
+    },
+    {
+      "id": 5,
+      "username": "user5",
+      "comment": "This is 323232323 comment.",
+      "timestamp": "2024-06-01T14:15:30Z",
+      "role": "User",
+      "avatar":"/src/assets/user5.webp"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import styles from "./NavigationBar.module.scss";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MainLogo from "./MainLogo/MainLogo";
@@ -19,11 +19,34 @@ const StyledLink = styled(NavLink)`
 
 const NavigationBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActive, setIsActive] = useState(styles.menu_box);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+  if (scrollY > 100) {
+   return setIsActive(styles.menu_box_active);
+
+  } else {
+   return setIsActive(styles.menu_box);
+  }
+};
+
+useEffect(() => {
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
+
+
   return (
-    <div className={styles.menu_box}>
+    <div className={isActive}>
       <MainLogo></MainLogo>
       
       <nav className={styles.nav_box}>
