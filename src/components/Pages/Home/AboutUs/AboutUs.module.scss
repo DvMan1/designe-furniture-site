@@ -1,5 +1,5 @@
 .advantages_box {
-  height: 1200px;
+  height: 100vh;
   padding-top: 150px;
   padding-bottom: 150px;
   display: flex;
@@ -21,9 +21,8 @@
 }
 .facts_box {
   display: inline;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-right: 60px;
-
   flex-wrap: wrap;
   justify-content: space-between;
 }
