@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import icon from "../../../../public/symbol-defs.svg";
 import styles from "./CallbackButton.module.scss";
 import CallbackModal from "./CallbackModal/CallbackModal";
 
 const CallbackButton = () => {
   const [visibleModal, setVisibleModal] = useState(false);
+ 
 
   const handleToggleModal = () => {
     setVisibleModal((prevVisibleModal) => !prevVisibleModal);

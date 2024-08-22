@@ -8,7 +8,8 @@ const FormCallback = () => {
         <h2 className={styles.form_title}>
           ПРЕКРАСНАЯ КОНСУЛЬТАЦИЯ ДЛЯ БАГАТЫХ ЛЮДЕЙ С МАССАЖЕМ СТУПНЕЙ ГЕМОРРОЕМ{" "}
         </h2>
-        <Form />{" "}
+        <Form />
+
       </div>
     </div>
   );
