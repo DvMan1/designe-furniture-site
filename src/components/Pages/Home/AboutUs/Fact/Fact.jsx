@@ -9,7 +9,6 @@ const Fact = ({  index, handleIndex }) => {
   return (
     <div className={styles.fact_box} onMouseEnter={giveIndex}>
       <h3 className={styles.fact_title}>{content.title}</h3>
-      <p className={styles.fact_article}>{content.description}</p>
     </div>
   );
 };
