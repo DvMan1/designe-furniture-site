@@ -1,4 +1,15 @@
 .form_container{
     display: flex;
+    justify-content: center;
     width: 100%;
 }
+.form_box{
+    width: 1090px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+  }
+
+  .form_title{
+    width: 50%;
+  }
