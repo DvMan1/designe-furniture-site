@@ -1,12 +1,14 @@
-.more_box{
-color: aliceblue;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
+.more_box {
+height: 600px;
+width: 600px;
+    color: aliceblue;
+    background-color: black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
-.more_article{
-    text-align: center;
-  
+.more_article {
+  font-size: 40px;
+  color: aliceblue;
+  text-align: center;
 }

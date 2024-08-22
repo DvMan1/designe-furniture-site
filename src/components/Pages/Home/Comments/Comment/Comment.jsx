@@ -1,8 +1,21 @@
-import styles from "./Comment.module.scss"
+import styles from "./Comment.module.scss";
 
-const Comment =({name,text})=>{
-    return(<>
-    <h2 className={styles.comment_title}>Name:{name}<p className={styles.comment_text}>{text}</p></h2>
-    </>)
-}
-export default Comment
+
+const Comment = ({ name, text, role, avatar }) => {
+  
+  
+  return (
+    <div className={styles.comment_box}>
+      <img className={styles.comment_avatar}src={avatar} alt={name} />
+      <div className={styles.title_box}>
+        <h2 className={styles.comment_title}>{name}</h2>
+        <h3 className={styles.comment_role}>{role}</h3>
+      </div>
+
+      <div className={styles.text_box}>
+        <p className={styles.comment_text}>{text}</p>
+      </div>
+    </div>
+  );
+};
+export default Comment;

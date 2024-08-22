@@ -1,7 +1,7 @@
 .callback_box {
-  width: 100%;
+  width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content:center;
   flex-wrap: wrap;
 }
 .input_box {
@@ -22,9 +22,9 @@
   border: none;
   outline: none;
   margin-top: 30px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(96, 96, 96);
-  border-radius: 30px;
+  background-color: transparent;
+border-bottom: 5px solid #c5a47e;
+
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
@@ -33,7 +33,7 @@
 .callback_input:focus + .callback_label,
 .callback_input:not(:placeholder-shown) + .callback_label {
   transform: translateY(-40px);
-  color: rgb(255, 0, 0);
+  color: rgb(0, 0, 0);
 }
 .textarea_box {
   display: flex;
@@ -48,9 +48,8 @@
   padding-left: 10px;
   padding-top:15px;
   resize: none;
-  color: rgb(255, 255, 255);
-  background-color: rgb(96, 96, 96);
-  border-radius: 30px;
+  background-color: transparent;
+  border-bottom: 5px solid #c5a47e;
   font-size: 16px;
   font-weight: 400;
   height: 85p;

@@ -1,0 +1,25 @@
+.pagination {
+    position: absolute;
+    top: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 50px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 60px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    @media screen and (max-width: 767px) {
+      width: 25px;
+    height: 5px;
+  }
+  }
+  
+  .dot.active {
+    background-color: rgb(101, 101, 101);
+  }
+  

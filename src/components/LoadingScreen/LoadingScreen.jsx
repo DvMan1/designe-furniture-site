@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './LoadingScreen.module.scss'; 
 
 const LoadingScreen = () => {
-    const text = "MEBELSTON";
+    const text = "MEBELSTONE";
   return (
     <div className={styles.loading_screen}>
        {text.split('').map((char, index) => (
