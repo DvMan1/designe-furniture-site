@@ -14,7 +14,7 @@
 }
 .callback_label {
   color: rgb(0, 0, 0);
-  top: 55%;
+  top: 40px;
   left: 20px;
   position: absolute;
 }
@@ -22,7 +22,7 @@
   width: 100%;
   border: none;
   outline: none;
-  margin-top: 30px;
+  margin-bottom: 25px;
   background-color: transparent;
 border-bottom: 5px solid #c5a47e;
 
@@ -45,7 +45,7 @@ border-bottom: 5px solid #c5a47e;
   border: none;
   outline: none;
   width: 100%;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding-left: 10px;
   padding-top:15px;
   resize: none;
@@ -56,7 +56,6 @@ border-bottom: 5px solid #c5a47e;
   height: 85p;
 }
 .buttom_box {
-  margin-top: 30px;
   width: 100%;
 }
 .callback_submit_button {
