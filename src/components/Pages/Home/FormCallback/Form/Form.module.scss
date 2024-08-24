@@ -1,14 +1,15 @@
 .callback_box {
+  height: 60vh;
   width: 50%;
   display: flex;
-  justify-content:center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 .input_box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 51%;
+  width: 100%;
   position: relative;
 }
 .callback_label {
@@ -38,7 +39,7 @@ border-bottom: 5px solid #c5a47e;
 .textarea_box {
   display: flex;
   justify-content: flex-start;
-  width: 51%;
+  width: 100%;
 }
 .callback_message_input {
   border: none;
@@ -56,7 +57,7 @@ border-bottom: 5px solid #c5a47e;
 }
 .buttom_box {
   margin-top: 30px;
-  width: 51%;
+  width: 100%;
 }
 .callback_submit_button {
   padding: 0px 15px;
