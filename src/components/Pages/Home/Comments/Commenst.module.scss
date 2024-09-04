@@ -9,13 +9,14 @@
     overflow: hidden;
 }
 .comments_contener{
-    height: 400px;
+    height: 80vh;
     width:100%; 
     gap: 10px;
     display: flex;
     overflow: hidden;
     align-items: center;
     justify-content: center;
+    
     @media screen and (max-width: 767px) {
         height: 200px;
     }

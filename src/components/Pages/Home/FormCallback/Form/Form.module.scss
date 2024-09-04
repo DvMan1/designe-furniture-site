@@ -7,7 +7,7 @@
 }
 .input_box {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   width: 100%;
   position: relative;
@@ -19,12 +19,12 @@
   position: absolute;
 }
 .callback_input {
-  width: 100%;
+  width: 500px;
   border: none;
   outline: none;
   margin-bottom: 25px;
   background-color: transparent;
-border-bottom: 5px solid #c5a47e;
+border-bottom: 2px solid #7b7b7b;
 
   font-size: 16px;
   font-weight: 400;
@@ -44,16 +44,17 @@ border-bottom: 5px solid #c5a47e;
 .callback_message_input {
   border: none;
   outline: none;
-  width: 100%;
+  resize:none;
+
+  width: 500px;
   margin-bottom: 30px;
   padding-left: 10px;
   padding-top:15px;
-  resize: none;
   background-color: transparent;
-  border-bottom: 5px solid #c5a47e;
+  border-bottom: 2px solid #7b7b7b;
   font-size: 16px;
   font-weight: 400;
-  height: 85p;
+  height: 85px;
 }
 .buttom_box {
   width: 100%;
@@ -68,5 +69,5 @@ border-bottom: 5px solid #c5a47e;
   color: #fff;
   border-radius: 30px;
   cursor: pointer;
-  background-color: #c5a47e;
+  background-color: #7b7b7b;
 }
