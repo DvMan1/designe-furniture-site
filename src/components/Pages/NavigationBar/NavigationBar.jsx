@@ -5,6 +5,8 @@ import styled from "styled-components";
 import MainLogo from "./MainLogo/MainLogo";
 import icon from "../../../../public/symbol-defs.svg"
 import classNames from 'classnames';
+import { FaBars, FaCross} from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 
 const StyledLink = styled(NavLink)`
   color: black;
@@ -52,10 +54,14 @@ useEffect(() => {
       <nav className={styles.nav_box}>
         
         <button type="button" className={classNames(styles.menu_button, { [styles.is_open]: isOpen })} onClick={toggleMenu}>
-          <svg width="40px"height="40px">
+          <FaBars className={styles.icon_menu} size={40} />
+          <MdClose className={styles.icon_cross} size={50} />
+
+          
+          {/* <svg width="40px"height="40px">
             <use className={styles.icon_menu} href={`${icon}#icon-burger`}></use>
             <use className={styles.icon_cross} href={`${icon}#icon-cross`}></use>
-          </svg>
+          </svg> */}
         </button>
         <div className={ classNames(styles.menu_conteiner,{ [styles.is_open]: isOpen })}><StyledLink to="/" className={styles.nav_link}>
           Home

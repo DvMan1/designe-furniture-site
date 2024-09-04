@@ -47,7 +47,7 @@ const Form = () => {
           className={styles.callback_message_input}
           name="feedback"
           rows="5"
-          placeholder="Enter your message here..."
+          placeholder="Ваше сообщение"
           {...register("message")}
           id="message"
         />

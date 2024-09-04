@@ -1,6 +1,7 @@
 import icon from "../../../../../public/symbol-defs.svg";
 import styles from "./MainLogo.module.scss";
 import { useNavigate } from "react-router-dom";
+import { FaCircleHalfStroke } from "react-icons/fa6";
 
 const MainLogo = () => {
   const navigate = useNavigate();
@@ -8,9 +9,7 @@ const MainLogo = () => {
     navigate("/");
   };
  return (<div className={styles.logo_box}>
-    <svg className={styles.icon} onClick={onClick}>
-      <use href={`${icon}#icon-logo`}></use>
-    </svg>
+    <FaCircleHalfStroke className={styles.icon} onClick={onClick} />
   </div>)
 };
 export default MainLogo;

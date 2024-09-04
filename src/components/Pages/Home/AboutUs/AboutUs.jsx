@@ -26,6 +26,10 @@ const AboutUs = () => {
               index={3}
               handleIndex={setLastFactIndex}
             />
+             <Fact
+              index={4}
+              handleIndex={setLastFactIndex}
+            />
           </ul>
           <More index={lastFactIndex} />
         </div>

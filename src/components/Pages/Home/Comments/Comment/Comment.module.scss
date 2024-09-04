@@ -1,0 +1,34 @@
+.comment_box{
+    border: 1px solid #9a9a9a;
+    height: 350px;
+
+}
+
+.comment_wrapper{
+    margin-top: 50px;
+    margin-left: 75px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment_avatar_box{
+    padding-bottom: 20px;
+    display: flex;
+}
+.title_box{
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.comment_title{
+    width: 100%;
+}
+.comment_role{
+    width: 100%;
+}
+
+.text_box{
+    width: 100%;
+}
