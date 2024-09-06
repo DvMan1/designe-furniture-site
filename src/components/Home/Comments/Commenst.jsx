@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./Commenst.module.scss";
 import Comment from "./Comment/Comment";
-import commentsData from "../../../../data/comments.json";
+import commentsData from "../../../data/comments.json";
 import ButtonChangeComment from "./ButtonChangeComment/ButtonChangeComment";
 import PaginationDots from "./PaginationDots/PaginationDots";
 

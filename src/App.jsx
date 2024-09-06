@@ -2,7 +2,7 @@ import "./App.css";
 import { useState,useEffect } from "react";
 
 import { BrowserRouter } from "react-router-dom";
-import Pages from "./components/Pages/Pages";
+import Pages from "./pages/Pages";
 import LoadingScreen from "./components/LoadingScreen/LoadingScreen";
 function App() {
   const [isLoading, setIsLoading] = useState(true)

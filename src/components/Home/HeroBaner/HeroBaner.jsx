@@ -1,5 +1,5 @@
 import styles from "./HeroBaner.module.scss";
-import hero_img from "../../../../assets/hero_img.jpg";
+import hero_img from "../../../assets/hero_img.jpg";
 const HeroBaner = () => {
   return (
     <div className={styles.hero_box}>

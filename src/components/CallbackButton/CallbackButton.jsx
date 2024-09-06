@@ -1,7 +1,8 @@
-import { useState,useEffect } from "react";
-import icon from "../../../../public/symbol-defs.svg";
+import { useState } from "react";
 import styles from "./CallbackButton.module.scss";
 import CallbackModal from "./CallbackModal/CallbackModal";
+import { FaPhoneFlip } from "react-icons/fa6";
+
 
 const CallbackButton = () => {
   const [visibleModal, setVisibleModal] = useState(false);
@@ -15,9 +16,10 @@ const CallbackButton = () => {
     <>
       {!visibleModal && (
         <div className={styles.icon_box}>
-          <svg className={styles.icon} onClick={handleToggleModal}>
+          <FaPhoneFlip className={styles.icon} onClick={handleToggleModal}/>
+          {/* <svg className={styles.icon} onClick={handleToggleModal}>
             <use href={`${icon}#icon-phone`}></use>
-          </svg>
+          </svg> */}
         </div>
       )}
 

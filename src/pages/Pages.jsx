@@ -1,12 +1,11 @@
-import NavigationBar from "./NavigationBar/NavigationBar";
-import Home from "./Home/Home";
+import NavigationBar from "../components/NavigationBar/NavigationBar";
+import Home from "../components/Home/Home";
 import styles from"./Pages.module.scss"
 import { Routes,Route } from "react-router-dom";
-import Portfolio from "./Portfolio/Portfolio";
-import About from "./About/About";
-import CostCalculator from "./CostCalculator/CostCalculator";
-import Contact from "./Contact/Contact";
-import CallbackButton from "./CallbackButton/CallbackButton"
+import Portfolio from "../components/Portfolio/Portfolio";
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
+import CallbackButton from "../components/CallbackButton/CallbackButton"
 
 
 const Pages = () => {
@@ -19,7 +18,6 @@ const Pages = () => {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio"element={<Portfolio/>}/>
           <Route path="/about"element={<About/>}/>
-          <Route path="/cost-calculator"element={<CostCalculator/>}/>
           <Route path="/contact" element={<Contact/>}/>
         </Routes>
       </div>
