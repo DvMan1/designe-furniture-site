@@ -1,4 +1,3 @@
-import icon from "../../../../../public/symbol-defs.svg";
 import styles from "./MainLogo.module.scss";
 import { useNavigate } from "react-router-dom";
 import { FaCircleHalfStroke } from "react-icons/fa6";

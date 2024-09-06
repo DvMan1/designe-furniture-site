@@ -1,11 +1,10 @@
-import HeroBaner from "./HeroBaner/HeroBaner";
+import HeroBaner from "./HeroBaner/HeroBaner.jsx";
 import Projects from "./Projects/Projects.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
 import styles from "./Home.module.scss";
 import FormCallback from "./FormCallback/FormCallback.jsx";
 import Comments from "./Comments/Commenst.jsx";
 import Footer from "./Footer/Footer.jsx";
-import Partners from "./Partners/Partners.jsx";
 
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
       <Projects />
       <AboutUs />
       <FormCallback />
-      <Partners/>
       <Comments />
       <Footer />
     </div>

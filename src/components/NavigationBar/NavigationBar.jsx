@@ -3,7 +3,6 @@ import { useState,useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MainLogo from "./MainLogo/MainLogo";
-import icon from "../../../../public/symbol-defs.svg"
 import classNames from 'classnames';
 import { FaBars, FaCross} from "react-icons/fa";
 import { MdClose } from "react-icons/md";
@@ -56,12 +55,6 @@ useEffect(() => {
         <button type="button" className={classNames(styles.menu_button, { [styles.is_open]: isOpen })} onClick={toggleMenu}>
           <FaBars className={styles.icon_menu} size={40} />
           <MdClose className={styles.icon_cross} size={50} />
-
-          
-          {/* <svg width="40px"height="40px">
-            <use className={styles.icon_menu} href={`${icon}#icon-burger`}></use>
-            <use className={styles.icon_cross} href={`${icon}#icon-cross`}></use>
-          </svg> */}
         </button>
         <div className={ classNames(styles.menu_conteiner,{ [styles.is_open]: isOpen })}><StyledLink to="/" className={styles.nav_link}>
           Home
@@ -71,9 +64,6 @@ useEffect(() => {
         </StyledLink>
         <StyledLink to="/about" className={styles.nav_link}>
           About
-        </StyledLink>
-        <StyledLink to="/cost-calculator" className={styles.nav_link}>
-          Cost Calculator
         </StyledLink>
         <StyledLink to="/contact" className={styles.nav_link}>
           Contact

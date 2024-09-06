@@ -1,5 +1,5 @@
 import styles from "./More.module.scss";
-import aboutData from "../../../../../data/about.json";
+import aboutData from "../../../../data/about.json";
 
 const More = ({ index }) => {
   const content = aboutData.find(item => item.index === index);

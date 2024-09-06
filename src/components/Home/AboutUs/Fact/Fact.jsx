@@ -1,5 +1,5 @@
 import styles from "./Fact.module.scss";
-import aboutData from "../../../../../data/about.json";
+import aboutData from "../../../../data/about.json";
 
 const Fact = ({  index, handleIndex }) => {
   const content = aboutData.find((item) => item.index === index);
