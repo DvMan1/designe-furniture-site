@@ -24,7 +24,7 @@
   outline: none;
   margin-bottom: 25px;
   background-color: transparent;
-border-bottom: 2px solid #7b7b7b;
+  border-bottom: 2px solid #7b7b7b;
 
   font-size: 16px;
   font-weight: 400;
@@ -44,12 +44,12 @@ border-bottom: 2px solid #7b7b7b;
 .callback_message_input {
   border: none;
   outline: none;
-  resize:none;
+  resize: none;
 
   width: 500px;
   margin-bottom: 30px;
   padding-left: 10px;
-  padding-top:15px;
+  padding-top: 15px;
   background-color: transparent;
   border-bottom: 2px solid #7b7b7b;
   font-size: 16px;
@@ -70,4 +70,23 @@ border-bottom: 2px solid #7b7b7b;
   border-radius: 30px;
   cursor: pointer;
   background-color: #7b7b7b;
+}
+@media (max-width: 768px) {
+  .callback_input {
+    width: 100%;
+  }
+  .callback_message_input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 390px) {
+  .callback_input {
+    width: 100%;
+  }
+  .callback_message_input {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+  }
 }

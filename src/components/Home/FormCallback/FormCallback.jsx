@@ -1,5 +1,7 @@
 import styles from "./FormCallback.module.scss";
 import Form from "./Form/Form";
+import { SlSocialInstagram } from "react-icons/sl";
+import { AiFillTikTok,AiOutlineYoutube} from "react-icons/ai";
 
 const FormCallback = () => {
   return (
@@ -16,13 +18,14 @@ const FormCallback = () => {
             <p className={styles.form_adress}>Впишите адрес вашей компании</p>
             <ul className={styles.form_sociallinks}>
               <li className={styles.form_social}>
-                <a href="">Facebook</a>
+              <AiOutlineYoutube  size={45}/>
               </li>
               <li className={styles.form_social}>
-                <a href="">Twitter</a>
+              <AiFillTikTok size={40} />
+
               </li>
               <li className={styles.form_social}>
-                <a href="">Instagram</a>
+              <SlSocialInstagram  size={33}/>
               </li>
             </ul>
           </div>
