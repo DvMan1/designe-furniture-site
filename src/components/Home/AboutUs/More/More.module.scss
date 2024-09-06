@@ -1,14 +1,30 @@
 .more_box {
-height: 600px;
-width: 600px;
-    color: aliceblue;
-    background-color: black;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+  height: 600px;
+  width: 600px;
+  color: aliceblue;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .more_article {
   font-size: 40px;
   color: aliceblue;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .more_box {
+    height: 300px;
+    width: 300px;
+  }
+  .more_article {
+    font-size: 20px;}
+}
+@media (max-width: 390px) {
+  .more_box {
+    height: 150px;
+    width: 150px;
+  }
+  .more_article {
+    font-size: 10px;}
 }

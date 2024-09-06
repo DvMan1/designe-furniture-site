@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 import styles from "./CallbackModal.module.scss";
+import Form from "../../Home/FormCallback/Form/Form";
+
 
 const modalRoot = document.querySelector("#modal-root");
 
@@ -29,6 +31,7 @@ const CallbackModal = ({ onClose }) => {
       <div className={styles.ModalContent}>
         <button onClick={onClose} className={styles.ModalCloseButton}>Close Modal</button>
         Позвони
+        <Form/>
       </div>
     </div>,
     modalRoot
