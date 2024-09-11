@@ -17,14 +17,17 @@ const AboutUs = () => {
             <Fact
               index={1}
               handleIndex={setLastFactIndex}
+
             />
             <Fact
               index={2}
               handleIndex={setLastFactIndex}
+
             />
             <Fact
               index={3}
               handleIndex={setLastFactIndex}
+
             />
              <Fact
               index={4}

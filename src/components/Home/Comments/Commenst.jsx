@@ -13,14 +13,13 @@ const Comments = () => {
   const [swiper,setSwiper] = useState(null);
 
   const goToNext = () => {
-    console.log("next");
     if (swiper) {
       swiper.slideNext();
     }
   };
 
   const goToPrev = () => {
-    console.log("prev");
+
     if (swiper) {
       swiper.slidePrev();
     }
@@ -42,7 +41,17 @@ const Comments = () => {
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             onSwiper={(swiper) => setSwiper(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              390: {
+                slidesPerView: 1,
+              },
+              0: {
+                slidesPerView: 1,
+              },
+            }}
           >
             {commentsData.comments.map((comment) => (
               <SwiperSlide key={comment.id}>
@@ -52,6 +61,7 @@ const Comments = () => {
                   text={comment.comment}
                   role={comment.role}
                   avatar={comment.avatar}
+            
                 />
               </SwiperSlide>
             ))}

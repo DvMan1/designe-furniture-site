@@ -1,0 +1,26 @@
+.question_conteiner{
+
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    
+}
+.question_wrapper{
+    width: 730px;
+    padding: 20px;
+    border-bottom: 1px solid #000000;
+    @media (max-width: 768px) {
+        width: 550px;
+    }
+    @media (max-width: 390px) {
+        width: 350px;
+    }
+}
+.question_title{
+ 
+}
+.question_description{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
