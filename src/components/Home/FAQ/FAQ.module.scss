@@ -1,0 +1,28 @@
+.FAQ_conteiner {
+  width: 100%;
+}
+.FAQ_wrapper {
+  align-items: center;
+  justify-content: center;
+}
+.FAQ_title_wrapper {
+  width: calc(100% - 1.5rem);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 4rem;
+}
+.FAQ_title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.35em;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.FAQ_question_wrapper{
+    width: calc(100% - 1.5rem);
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

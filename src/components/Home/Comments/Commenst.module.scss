@@ -1,44 +1,40 @@
-.comments_box{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-}
-.comments_animated_box{
-    width: 80%;  
-    overflow: hidden;
-}
-.comments_contener{
-    height: 80vh;
-    width:100%; 
-    gap: 10px;
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    
-    @media screen and (max-width: 767px) {
-        height: 200px;
-    }
+.comments_box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+}
+.comments_animated_box {
+  width: 80%;
+  overflow: hidden;
+}
+.comments_contener {
+  height: 80vh;
+  width: 100%;
+  gap: 10px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 @keyframes animateTransform {
-    0% {
-      transform: translateX(0);
-    }
-  
-    100% {
-      transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(0);
   }
 
-.Prev_button_contener{
-    position: absolute;
-    top: 50%;
-    left: 10%;
+  100% {
+    transform: translateX(100%);
+  }
 }
-.Next_button_contener{
-    position: absolute;
-    top: 50%;
-    right: 10%; 
+
+.Prev_button_contener {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.Next_button_contener {
+  position: absolute;
+  top: 50%;
+  right: 10%;
 }

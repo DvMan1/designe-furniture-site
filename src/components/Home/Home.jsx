@@ -5,6 +5,8 @@ import styles from "./Home.module.scss";
 import FormCallback from "./FormCallback/FormCallback.jsx";
 import Comments from "./Comments/Commenst.jsx";
 import Footer from "./Footer/Footer.jsx";
+import FAQ from "./FAQ/FAQ.jsx";
+
 
 
 const Home = () => {
@@ -15,6 +17,7 @@ const Home = () => {
       <AboutUs />
       <FormCallback />
       <Comments />
+      <FAQ/>
       <Footer />
     </div>
   );

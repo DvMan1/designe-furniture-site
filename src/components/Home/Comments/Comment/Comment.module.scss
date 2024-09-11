@@ -1,7 +1,16 @@
 .comment_box{
     border: 1px solid #9a9a9a;
     height: 350px;
-
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width: 390px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 }
 
 .comment_wrapper{
@@ -31,4 +40,7 @@
 
 .text_box{
     width: 100%;
+    @media(max-width: 350px){
+        width: 200px;
+    }
 }
