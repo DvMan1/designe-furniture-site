@@ -1,17 +1,5 @@
 .home_box{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
 }
-@media (max-width: 768px) {
-    .home_box {
-        gap: 8px;
-    }
-  }
-  
-  @media (max-width: 390px) {
-    .home_box {
-        gap: 5px;
-    }
-  }

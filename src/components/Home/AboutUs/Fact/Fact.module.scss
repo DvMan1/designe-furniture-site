@@ -2,15 +2,16 @@
     width: 430px;
     padding-bottom: 70px;
 }
-.fact_box:hover .fact_title{
-    color: gray;
-}
+
 
 
 .fact_title{
     font-size: 30px;
-    color: rgb(0, 0, 0);
+    color: #2153e4;
     text-align: left;
+}
+.fact_title:hover{
+    color: #5daffd;
 }
 .fact_article{
     font-size: 15px;

@@ -4,6 +4,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  
+
 }
 .input_box {
   display: flex;
@@ -13,9 +15,9 @@
   position: relative;
 }
 .callback_label {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   top: 40px;
-  left: 20px;
+  left: 10px;
   position: absolute;
 }
 .callback_input {
@@ -24,8 +26,8 @@
   outline: none;
   margin-bottom: 25px;
   background-color: transparent;
-  border-bottom: 2px solid #7b7b7b;
-
+  border-bottom: 2px solid #bcbcbc;
+color: #fff;
   font-size: 16px;
   font-weight: 400;
   padding-left: 10px;
@@ -34,7 +36,7 @@
 .callback_input:focus + .callback_label,
 .callback_input:not(:placeholder-shown) + .callback_label {
   transform: translateY(-40px);
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .textarea_box {
   display: flex;
@@ -45,16 +47,19 @@
   border: none;
   outline: none;
   resize: none;
-
   width: 500px;
   margin-bottom: 30px;
   padding-left: 10px;
   padding-top: 15px;
   background-color: transparent;
-  border-bottom: 2px solid #7b7b7b;
+  border-bottom: 2px solid #bcbcbc;
+  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   height: 85px;
+}
+.callback_message_input::placeholder {
+  color: #ffffff;
 }
 .buttom_box {
   width: 100%;
@@ -67,9 +72,9 @@
   width: 160px;
   height: 50px;
   color: #fff;
-  border-radius: 30px;
+  border-radius: 20px;
   cursor: pointer;
-  background-color: #7b7b7b;
+  background-color: #5daffd;
 }
 @media (max-width: 768px) {
   .callback_input {
