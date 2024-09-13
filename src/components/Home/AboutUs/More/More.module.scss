@@ -1,7 +1,6 @@
 .more_box {
   height: 600px;
   width: 600px;
-  color: aliceblue;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -9,7 +8,7 @@
 }
 .more_article {
   font-size: 40px;
-  color: aliceblue;
+  color: #2153e4;
   text-align: center;
 }
 @media (max-width: 768px) {
