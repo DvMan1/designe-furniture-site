@@ -20,11 +20,11 @@ const Form = () => {
           type="name"
           {...register("name", { required: true })}
           id="name"
-          placeholder=" "
+          placeholder="Ім'я"
         />
-        <label className={styles.callback_label} htmlFor="name">
+        {/* <label className={styles.callback_label} htmlFor="name">
           Ім'я
-        </label>
+        </label> */}
         {errors.login && <span>This field is required</span>}
       </div>
 
@@ -34,11 +34,11 @@ const Form = () => {
           type="tel"
           {...register("tel", { required: true })}
           id="phone"
-          placeholder=" "
+          placeholder="Телефон"
         />
-        <label className={styles.callback_label} htmlFor="phone">
+        {/* <label className={styles.callback_label} htmlFor="phone">
           Телефон
-        </label>
+        </label> */}
         {errors.login && <span>This field is required</span>}
       </div>
 
