@@ -21,6 +21,7 @@ const Form = () => {
           {...register("name", { required: true })}
           id="name"
           placeholder="Ім'я"
+          autoFocus={false}
         />
         {/* <label className={styles.callback_label} htmlFor="name">
           Ім'я
@@ -35,6 +36,7 @@ const Form = () => {
           {...register("tel", { required: true })}
           id="phone"
           placeholder="Телефон"
+          autoFocus={false}
         />
         {/* <label className={styles.callback_label} htmlFor="phone">
           Телефон
@@ -50,6 +52,7 @@ const Form = () => {
           placeholder="Ваше сообщение"
           {...register("message")}
           id="message"
+          autoFocus={false}
         />
         {errors.password && <span>This field is required</span>}
       </div>
